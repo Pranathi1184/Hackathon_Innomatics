@@ -45,24 +45,24 @@ Multiple Choice Question Results
 
 Numerical Answer Key
 
-Total orders by Gold members: 4987
-Total revenue Hyderabad: 1889367
-Distinct users: 2883
-Average order value Gold: 797.15
-Orders with rating >= 4.5: 3374
-Orders in top Gold city (Chennai): 1337
+Total orders by Gold members: 4987  
+Total revenue Hyderabad: 1889367  
+Distinct users: 2883  
+Average order value Gold: 797.15  
+Orders with rating >= 4.5: 3374  
+Orders in top Gold city (Chennai): 1337  
 
 Fill-in-the-Blank Answers
 
-The column used to join orders.csv and users.json is user_id.
-The dataset containing cuisine and rating information is stored in SQL (or .sql) format.
-The total number of rows in the final merged dataset is 10,000.
-If a user has no matching record in users.json, the merged values will be NaN (or null).
-The Pandas function used to combine datasets based on a key is pd.merge().
-The column membership in the final dataset originates from the users.json file.
-The join key used to combine orders data with restaurant details is restaurant_id.
-The column that helps identify the type of food served by a restaurant is cuisine.
-If a user places multiple orders, their personal details appear multiple times in the final merged dataset.
+The column used to join orders.csv and users.json is user_id.  
+The dataset containing cuisine and rating information is stored in SQL (or .sql) format.  
+The total number of rows in the final merged dataset is 10,000.  
+If a user has no matching record in users.json, the merged values will be NaN (or null).  
+The Pandas function used to combine datasets based on a key is pd.merge().  
+The column membership in the final dataset originates from the users.json file.  
+The join key used to combine orders data with restaurant details is restaurant_id.  
+The column that helps identify the type of food served by a restaurant is cuisine.  
+If a user places multiple orders, their personal details appear multiple times in the final merged dataset.  
 
 # Conclusion
 The problem was solved by building a robust data joinery pipeline. By resolving the conflicts between the CSV, JSON, and SQL formats, I was able to generate the final_food_delivery_dataset.csv, which serves as the definitive source for all required metrics.
