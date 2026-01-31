@@ -1,7 +1,7 @@
-#🏆 Hackathon Solution: Food Delivery Data Integration & Analysis
+# 🏆 Hackathon Solution: Food Delivery Data Integration & Analysis
 This repository contains the solution for the Hackathon challenge. The core problem was to unify fragmented data from three different formats to answer specific business intelligence questions.
 
-#The Problem Statement
+# The Problem Statement
 In a real-world scenario, data is often siloed across different systems. This challenge provided:
 
 Transactional Data (orders.csv): High-volume sales records.
@@ -12,7 +12,7 @@ Restaurant Master Data (restaurants.sql): Restaurant attributes (Cuisine, Rating
 
 The Task: Merge these datasets using a LEFT JOIN strategy to create a single "Source of Truth" and solve 10 complex analytical questions.
 
-#Technical Solution
+# Technical Solution
 The solution was implemented in a Jupyter Notebook using the following logic:
 
 Step 1: Handling Multi-Format Data
@@ -29,7 +29,7 @@ Combined Data → restaurants (Key: restaurant_id)
 
 Join Type: Left Join (to ensure no order record was excluded even if master data was missing).
 
-#Problem Solutions
+# Problem Solutions
 Multiple Choice Question Results
 
 1. City with highest Gold revenue: Chennai
@@ -64,5 +64,5 @@ The join key used to combine orders data with restaurant details is restaurant_i
 The column that helps identify the type of food served by a restaurant is cuisine.
 If a user places multiple orders, their personal details appear multiple times in the final merged dataset.
 
-🏁 Conclusion
+# Conclusion
 The problem was solved by building a robust data joinery pipeline. By resolving the conflicts between the CSV, JSON, and SQL formats, I was able to generate the final_food_delivery_dataset.csv, which serves as the definitive source for all required metrics.
